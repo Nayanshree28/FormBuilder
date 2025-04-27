@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import close from "../assets/close.png";
+import { Pie } from "react-chartjs-2";
 import { useNavigate } from "react-router-dom";
 import calendar from "../assets/calendar.png";
-import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from 'chart.js';
 
 import "./ResponsePage.css";
