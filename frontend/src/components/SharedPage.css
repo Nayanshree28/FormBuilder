@@ -1,0 +1,82 @@
+
+
+
+.shared-page {
+  padding: 70px 40px 40px 40px;
+  background-color: #f9f9f9;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bubble-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bubble {
+  padding: 0px 15px;
+  border-radius: 10px;
+  max-width: 60%;
+  color: black;
+  border: 1px solid grey;
+  height: 40px;
+  background-color: #b2babb;
+}
+
+.bubble p {
+  margin-top: 11px;
+}
+
+.reply-bubble {
+  align-self: flex-end;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 60%;
+  background-color: #ff9900;
+}
+
+.reply-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align to the right side */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.reply-input {
+  flex: 1;
+  max-width: 25%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-button {
+  padding: 7px 13px;
+  background-color: #2522d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+.logo{
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+

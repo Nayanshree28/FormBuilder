@@ -1,0 +1,320 @@
+General Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    color: #f1f1f1; /* Light text color */
+  }
+  
+  /* Page Structure */
+  .response-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Navbar/Header */
+  .workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:  rgba(24, 24, 27, 1);
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  }
+  .workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(24, 24, 27, 1);
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+  
+.nav-btn-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px;
+    margin-right: -300px;
+
+}
+.nav-btn-res button {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+  }
+.response {
+    border: 1px solid #7EA6FF;
+    color: #7EA6FF;
+    border-radius: 6px;
+    height: 30px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+}
+.nav-toogle {
+
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.header-controls {
+    display: flex
+;
+    gap: 10px;
+}
+.header-controls .share {
+    background-color: #007bff;
+    color: white;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+}
+
+.header-controls .save {
+    background-color: #28a745;
+    color: white;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+}
+.header-controls .close {
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  /* Main Content */
+  .response-main {
+    flex-grow: 1;
+    padding: 40px 65px 20px 100px;
+    overflow-y: auto;
+  }
+  
+  /* Stats Section */
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 100px;
+  }
+  
+  .stat-box {
+    width: 183.75px;
+    height: 110.83px;
+    background: #323232;
+    color: #FFFFFF;
+    font-size: 21.78px;
+    line-height: 35.1px;
+    font-weight: 500;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+     border-radius: 16.11px ;
+
+    
+  }
+
+  .stat-box p{
+   margin: 10px 0 0 20px;
+  }
+  .stat-box h3{
+    margin-top: 12px;
+    margin-left: 20px;
+font-size: 23px;
+font-weight: 400;
+line-height: 39.49px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  }
+  
+  /* Table Section */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .response-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+ 
+  .response-table th,
+  .response-table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: left;
+    color: #f1f1f1;
+   
+  }
+ 
+  
+  .flex-align {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust the spacing between the icon and the text */
+  }
+  
+  
+ 
+ 
+  /* Chart Section */
+  .chart-container {
+    text-align: center;
+    margin: 60px 48px;
+    max-width: 250px;
+  }
+  
+  .chart {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  .chart-container h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  /* Scrollbar (Optional for table overflow) */
+  .table-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 5px;
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+    background: #2a2a2a;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stats-container {
+      flex-direction: column;
+      align-items: center
+    }
+  
+    .stat-box {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-right button {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+
+
+
+.response-table th:nth-child(2),
+.response-table td:nth-child(2) {
+  width: 19%;
+}
+
+.response-table th:nth-child(3),
+.response-table td:nth-child(3) {
+  width: 19%;
+  margin-left: 5px;
+
+}
+
+.response-table th:nth-child(4),
+.response-table td:nth-child(4) {
+  width: 19%;
+}
+
+.response-table th:nth-child(5),
+.response-table td:nth-child(5) {
+  width: 19%;
+}
+
+.response-table th:nth-child(6),
+.response-table td:nth-child(6) {
+  width: 20%;
+}
+
+.response-table th:nth-child(7),
+.response-table td:nth-child(7) {
+  width: 10%;
+}
+
+
+.response-table th:nth-child(3),
+.response-table th:nth-child(4),
+.response-table th:nth-child(5),
+.response-table th:nth-child(6)
+
+{
+  text-align: left;
+  padding-left: 40px;
+}
+
+.response-table th:nth-child(7){
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+ /* Container for the Pie Chart */
+.pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  /* Customize the chart text color */
+
+ 
+  
+  /* You can add additional styling here */
+  
