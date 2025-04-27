@@ -7,7 +7,7 @@ import showpassword from "../assets/show-password.png";
 import hidepassword from "../assets/hide-password.png"; 
 import lock from "../assets/lock.png";
 import logout from "../assets/Logout.png";
-const API_URL = "https://form-bot-6.onrender.com";
+const API_URL = "https://formbuilder-coyl.onrender.com";
 
 const Settings = () => {
   const navigate = useNavigate();

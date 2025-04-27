@@ -10,7 +10,7 @@ import dropsvg from "../assets/dropdown.png";
 import blacksvg from "../assets/down.png";
 import axios from "axios";
 
-const API_URL = "https://form-bot-6.onrender.com";
+const API_URL = "https://formbuilder-coyl.onrender.com";
 
 const DashBoard = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -43,7 +43,7 @@ const DashBoard = () => {
         try {
           // Fetch user details
           const userResponse = await fetch(
-            "https://form-bot-6.onrender.com/api/user",
+            "https://formbuilder-coyl.onrender.com/api/user",
             {
               headers: { Authorization: `Bearer ${token}` },
             }
@@ -118,7 +118,7 @@ const DashBoard = () => {
         const token = localStorage.getItem("token");
 
         const response = await axios.post(
-          "https://form-bot-6.onrender.com/api/auth/folders",
+          "https://formbuilder-coyl.onrender.com/api/auth/folders",
           { name: newFolderName },
           {
             headers: {

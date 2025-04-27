@@ -21,7 +21,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 
 import "./WorkSpace.css";
-const API_URL = "https://form-bot-6.onrender.com";
+const API_URL = "https://formbuilder-coyl.onrender.com";
 
 //Fallback storage utility
 const storage = (() => {
@@ -81,7 +81,7 @@ const WorkSpace = () => {
       try {
         // Fetch user details
         const userResponse = await fetch(
-          "https://form-bot-6.onrender.com/api/user",
+          "https://formbuilder-coyl.onrender.com/api/user",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

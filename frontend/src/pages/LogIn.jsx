@@ -7,7 +7,7 @@ import googleIcon from "../assets/Google Icon.png";
 import arrowBackIcon from "../assets/arrow_back.png";
 import './LogIn.css';
 
-const API_URL = "https://form-bot-6.onrender.com";
+const API_URL = "https://formbuilder-coyl.onrender.com";
 
 const LogIn = () => {
   const navigate = useNavigate();
